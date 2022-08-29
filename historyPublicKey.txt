@@ -1,0 +1,37 @@
+    1  su
+    2  sudo apt install gnupg
+    3  sudo -
+    4  sudo nano
+    5  su
+    6  sudo apt install gnupg
+    7  gpg --full-generate-key
+    8  gpg --output my_revocation_certificate.asc --gen-revoke 04D04EC4BB1FD12B9DEC83E2B19DB1F6312F12CE
+    9  gpg --list-keys
+   10  gpg -armor -export naldana@uca.edu.sv
+   11  gpg -armor --export naldana@uca.edu.sv
+   12  gpg --armor --export naldana@uca.edu.sv
+   13  gpg --output nextor.gpg --export naldana@uca.edu.sv
+   14  gpg --output nextor.gpg --export 00022120@uca.edu.sv
+   15  gpg --armor --export 00022120@uca.edu.sv
+   16  gpg --output nextor.gpg --armor --export 00022120@uca.edu.sv
+   17  gpg --output victorcortez.gpg --armor --export 00022120@uca.edu.sv
+   18  gpg --export-secret-keys --armor 00022120@uca.edu.sv > ./my-priv-gpg-key.asc
+   19  nano miguel.gpg
+   20  nano victor.gpg
+   21  gpg --import ~/Downloads/miguel.gpg 
+   22  gpg --import ~/miguel.gpg 
+   23  gpg --armor --export naldana@uca.edu.sv
+   24  gpg --output nextor.gpg --armor --export naldana@uca.edu.sv
+   25  gpg --list-keys
+   26  gpg --import ~/miguel.gpg 
+   27  nano miguel.gpg
+   28  nano miguel2.gpg
+   29  gpg --import ~/miguel2.gpg 
+   30  gpg --list-keys
+   31  gpg --edit-key 00087518@uca.edu.sv
+   32  gpg --list-keys
+   33  history > history.txt
+   34  cat history.txt
+   35  gpg --output history.txt.gpg --symmetric history.txt
+   36  cat history.txt.gpg
+   37  history > historyPublicKey.txt
